@@ -1,0 +1,122 @@
+REF:
+http://stackoverflow.com/questions/26366115/subtracting-pointers#comment41390775_26366558
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+double* d = new double[3];
+if(d == NULL)
+{
+     cout << "Error: Insufficient Memory\n";
+     exit(0);
+}
+for(unsigned int i = 0; i< 3; i++) {
+d[i] = 1.5 + i;
+}
+
+for(int i = 2; i>= 0; i--) {
+cout<< d[i] <<endl;
+}
+delete d;
+d = NULL;
+
+system("pause");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+
+char chr = 'N';
+
+if (chr == 'Y' ||chr == 'y')
+{
+cout<< "chr is y" <<endl; 
+
+}
+else if (chr == 'N' ||chr == 'n') 
+{
+cout<< "chr is n" <<endl; 
+}
+else
+{
+cout<< "chr is something else" <<endl;
+}
+
+system("pause");
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+	using namespace std;
+						
+	int main()
+	{
+		int count = 1;
+		for (; count <= 5 ; count++)
+		{
+			int count = 1;
+			cout<< count << "\n";
+		}
+		system("pause");
+		return 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

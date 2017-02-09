@@ -1,0 +1,56 @@
+(1)Sally
+   Sally
+   18
+   18
+
+(2)
+   (*head).next = NULL;
+
+(3)
+    head->item = "Wilbur's brother Orville";
+    cout << head->item;
+
+(4)
+   struct NodeType
+   {
+	vector<string> *value;
+	NodeType *next;
+   };
+
+   struct PointerType
+   {
+	NodeType *head;
+   };
+
+(5) 
+   When the list is empty, the head pointer of a LinkedList points to NULL.
+
+(6)
+   p1 = new Node;
+   p1 = p1->next;
+
+(7)
+Pointer p3;
+   p3 = p2->next;
+   delete p3;
+
+(8)
+   p1 = p1->next;
+
+(9)
+   Pointer p3;
+   p3= p3->next;
+   delete p3;
+
+(10)
+    a. more efficient.
+	It is more efficient to insert a new node into a known location in the
+	list because we can simply just make a temporary pointer that points the 
+	next node in the list, set the *nextNode pointer of the node before the location to the
+	new node and then finally set the *nextNode pointer of the new node to the
+	temporary pointer memory location.
+		In an array, we will need to define a new array which is twice the size of
+		the old array. We then have the overhead of looping through the element
+		of the old array in order to copy the element of the old array to the new one.
+		If we need to store a value at a know position in the array, we will need to
+		push the other values to the next index in the array.

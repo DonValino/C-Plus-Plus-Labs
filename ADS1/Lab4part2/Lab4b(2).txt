@@ -1,0 +1,21 @@
+e.g.
+
+/***************************************************************************************
+
+*    Usage: Used
+*    Title: What is the difference between ++i and i++
+*    Author: 
+*    Date: 2008
+*    Code version: 
+*    Availability: http://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i
+*
+***************************************************************************************/
+
+
+(b) The two loops output the same because:
+		1. The two loop is valid while i < 10
+		2. Although ++i is Pre Increment and i++ is Post  
+Increment, both works in the for loop. Both are incremented before the values are displayed in the console.
+	Depending on the situation, both ++i and i++ have some advantage from one another. If you want to store the value of ‘i’ to a variable before it is incremented, ++i is better. If you want ‘i’ to be incremented right away, use i++.
+
+

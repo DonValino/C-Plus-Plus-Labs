@@ -1,0 +1,195 @@
+(1 & 2)///////////http://stackoverflow.com/questions/4108313/how-do-i-find-the-length-of-an-array
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+int inputAndAverage5()
+{
+   cout << "Enter 5 values.";
+   double values[] = {0,0,0,0,0}; 
+   int valuesArraySize = (sizeof(values)/sizeof(*values));
+   double average = 0;
+   double total = 0;
+   double amountNeededToAddToGetAverage = 0;
+   double amountNeededToSubstractToGetAverage = 0;
+   cout <<"\n";
+   for (int i =0; i< valuesArraySize;i++)
+   {
+       cin >> values[i];
+   }
+   
+   for (int i =0; i< valuesArraySize;i++)
+   {
+       total += values[i];
+       average = total / valuesArraySize;
+   }
+   cout << "Average is: " << average << "\n";
+   
+   for (int i =0; i< valuesArraySize;i++)
+   {
+       if(values[i] > average)
+       {
+        amountNeededToSubstractToGetAverage = values[i] - average;
+        cout << "\nAmount needed to be substracted from element: " << (i + 1) << " to get the average is: " << amountNeededToSubstractToGetAverage << "\n";
+       }
+       else if (values[i] < average)
+       {
+            amountNeededToAddToGetAverage = average - values[i];
+            cout << "\nAmount needed to be added from element: " << (i + 1) << " to get the average is: " << amountNeededToAddToGetAverage << "\n";
+       }else
+       {
+            cout << "\nElement: " << (i + 1) << " is the same value as the average: " << average; 
+       }
+   }
+}
+int main(int argc, char *argv[])
+{   
+    inputAndAverage5();
+    cout << "\n";
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+(3 & 4)///////////http://stackoverflow.com/questions/4029870/how-to-create-a-dynamic-array-of-integers
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+int average5()
+{
+   cout << "Enter 5 values.";
+   double values[] = {0,0,0,0,0}; 
+   cout << "\n";
+   int valuesArraySize = (sizeof(values)/sizeof(*values));
+   for (int i =0; i< valuesArraySize;i++)
+   {
+       cin >> values[i];
+   }
+}
+int main(int argc, char *argv[])
+{   
+    average5();
+    cout << "\n";
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+(5 & 6)////////////http://www.fredosaurus.com/notes-cpp/newdelete/55dynexample.html
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+int averageN()
+{
+   cout << "Enter 5 values.";
+   bool istrue = true;
+   int n = 0;
+   int size = 5;
+   double total = 0;
+   double * values = new double[5]; 
+   double average = 0;
+   int arraysize = (sizeof(values)/sizeof(*values));
+   double *temp = new double[size];
+   int size1 = 0;
+   cout << "\n";
+   
+   while(cin >> values[n])
+   {
+
+
+           total += values[n];
+           size1 = (n + 1);
+       n++;
+       if(n >= size)
+       {
+            total = 0;
+            size = size * 2;
+            for(int i =0;i<n;i++)
+            {
+               temp[i] = values[i];
+               if(i < size)
+               {
+               total += temp[i];
+               }
+            }
+       delete [] values;
+       values = temp;
+       }
+	//Press Any Key to end this while loop.
+   }
+   
+
+   int valuesArraySize = size;
+   average = total / size1;
+   cout << "The size of the array is: " << valuesArraySize;
+   cout << "\nThe total is: " << total;
+   cout << "\nThe average is: " << average;
+   
+}
+int main(int argc, char *argv[])
+{   
+    averageN();
+    cout << "\n";
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+(7)
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+bool fillArray(char letters[])
+{
+    int size = 0;
+    bool isEnteredFullStop = false;
+    char * letter = letters;
+    cout << "Enter Values";
+    size = (sizeof(letter)/sizeof(*letter));
+    while(isEnteredFullStop == false)
+    {
+         int i = 0;
+         cin >> letter[i];
+         cout << "Helllo " << letter[i];
+         i++;
+         if(letter[i] == '.')
+         {
+                      cout << "In " << letter[i];
+            isEnteredFullStop = true;
+         }
+    }
+    return isEnteredFullStop;
+}
+int main(int argc, char *argv[])
+{   
+    char * letter = new char[100];
+    cout << "Full Stop typed:" << fillArray(letter);
+    cout << "\n";
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

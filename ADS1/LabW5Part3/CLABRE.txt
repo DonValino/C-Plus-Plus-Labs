@@ -1,0 +1,39 @@
+/***************************************************************************************
+
+*    Usage: Used
+*    Title: Preprocessor directives
+*    Author: 
+*    Date: 2015
+*    Code version: 
+*    Availability: http://www.cplusplus.com/doc/tutorial/preprocessor/
+*
+***************************************************************************************/
+
+(1)Philosophy: C retains the philosophy that programmers know what they're doing as it only 
+requires that they state their intentions explicitly. The development and evolution of C++'s life has been 
+informally governed by a set of rules that it's evolution should follow.(e.g. User-created types need to have the same support and performance as built-in types)
+
+Brevity: In C, This means shortness or conciseness in the style in which you write your code.
+It is a neatly short and concise way of breifly minimizing your codes.
+
+Clarity:This is the opposite from Brevity.This is a way of being clear and broad in the way you write your code.
+In larger programs, there is an increase in clarity because larger programs are more complex.
+Having clarity will enable future programmers to have knowledge about your code.
+
+function implementations: There can be differences in the speed of functions in C++. This all depends on the 
+type of the function. Example a function may not be returning anything (e.i. a void function).Other functions may be
+returning value of a specific datatypes. Functions not returning any values will be faster. The parameter of a function
+also plays a major role in terms of its speed. A function may be taking in as parameter/argument a pass by reference
+or a pass by value. Pass by value meant that you have a local value of the data being past as a parameter and this
+local value has no connections to the original value. The local and original value are both on a diffrent memory address.
+Pass by reference meant that you are passing into a function a value that points to the same memory address as the 
+original value. Any changes made by that value inside the function will reflect the original value. Pass by value will
+be faster than pass by reference.In strcpy program, all functions are taking as a parameter/argument, a pointer which
+points to a specific memory address the values are located. However some parameters are constant which means there
+can be no change in the value at that specific memory address. Functions with constant parameter will be significantly
+faster than those without a constant parameter.
+
+#define:Preprocessor directives are lines included in the code of programs preceded by a hash sign (#). 
+These lines are not program statements but directives for the preprocessor. The preprocessor examines the code 
+before actual compilation of code begins and resolves all these directives before any code is actually generated 
+by regular statements.
