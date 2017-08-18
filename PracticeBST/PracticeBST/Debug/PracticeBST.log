@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\jake valino\documents\visual studio 2015\projects\practicebst\practicebst\bst.h(275): warning C4715: 'BST<int>::hasPathSum': not all control paths return a value
+  PracticeBST.vcxproj -> c:\users\jake valino\documents\visual studio 2015\Projects\PracticeBST\Debug\PracticeBST.exe
+  PracticeBST.vcxproj -> c:\users\jake valino\documents\visual studio 2015\Projects\PracticeBST\Debug\PracticeBST.pdb (Partial PDB)

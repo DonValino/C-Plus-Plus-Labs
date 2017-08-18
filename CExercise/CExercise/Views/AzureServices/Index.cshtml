@@ -1,0 +1,50 @@
+﻿@model CExercise.Models.AzureServices
+
+@{
+    ViewBag.Title = "Confirmation";
+}
+
+<h2>Confirmation</h2>
+
+<div>
+    <h4>Estimated Cost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfInstance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfInstance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.selectedInstancePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.selectedInstancePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearlyCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearlyCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HourlyCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HourlyCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

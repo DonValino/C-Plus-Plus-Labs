@@ -1,0 +1,6 @@
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\bin\Debug\CExercise1.exe.config
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\bin\Debug\CExercise1.exe
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\bin\Debug\CExercise1.pdb
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\obj\Debug\CExercise1.csprojResolveAssemblyReference.cache
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\obj\Debug\CExercise1.exe
+c:\users\jake valino\documents\visual studio 2015\Projects\CExercise1\CExercise1\obj\Debug\CExercise1.pdb
